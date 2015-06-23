@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction (technique) au référencement</title>
+
+		<meta name="description" content="Quelques informations basiques concernant le référencement">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <!-- <link rel="stylesheet" href="css/print/pdf.css"> -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+          <h1>Introduction (technique) au référencement</h1>
+				</section>
+
+				<section>
+          <h2>Que veut Google ?</h2>
+          <p>Renvoyer la meilleure réponse possible à une recherche d'internaute</p>
+          <p class="fragment roll-in">C'est un moteur de RÉPONSES</p>
+				</section>
+
+				<section>
+          <h2>LA règle</h2>
+          <p>1 URL <=> 1 Page <=> 1 Contenu</p>
+				</section>
+
+				<section>
+          <h2>Définitions</h2>
+          <p>Crawl <-> Indexation</p>
+				</section>
+
+				<section>
+          <h2>Critères de référencement</h2>
+          <p class="fragment roll-in">Technique</p>
+          <p class="fragment roll-in">Contenu</p>
+          <p class="fragment roll-in">Liens</p>
+				</section>
+
+        <section>
+          <h2>Trois degrés de travail pour le référencement</h2>
+          <p class="fragment roll-in">La page</p>
+          <p class="fragment roll-in">Le site dans sa globalité</p>
+          <p class="fragment roll-in">Le reste du monde ;-)</p>
+        </section>
+
+        <section>
+          <blockquote><p>"Following best practices often does nothing for new and emerging sites."</p><cite><a href="https://moz.com/blog/combat-5-infuriating-seo-problems-whiteboard-friday">Rand Fishkin</a></cite></blockquote>
+        </section>
+
+        <section>
+          <h2>La page</h2>
+          <p class="fragment roll-in">Ensuite : s'assurer que le crawl se passe bien</p>
+          <p class="fragment roll-in">Comment : TITLE, Balises META</p>
+        </section>
+
+        <section>
+          <h2>Le site</h2>
+          <p>Structure travaillée</p>
+          <img src="structure-site.jpg" />
+        </section>
+
+        <section>
+          <h2>Le reste du web</h2>
+          <p>Partager les contenus</p>
+          <p>Flux RSS, Twitter, Facebook, ...(balises META spécifiques)</p>
+        </section>
+
+        <section>
+          <h2>Et Drupal, dans tout ça ?</h2>
+        </section>
+        <section>
+          <h2>Crawl</h2>
+          <h3>robots.txt (et le module <a href="https://drupal.org/project/robotstxt">RobotsTxt</a> associé)</h3>
+        </section>
+        <section>
+          <h2>Sitemap</h2>
+          <h3>sitemap.xml (et le module <a href="https://drupal.org/project/xmlsitemap">XML sitemap</a>)</h3>
+          <p>Pas forcément nécessaire</p>
+        </section>
+        <section>
+          <h2>Indexation</h2>
+          <h3>Module <a href="https://drupal.org/project/metatag">Metatag</a></h3>
+        </section>
+        <section>
+          <h2>Performance</h2>
+          <h3 class="fragment highlight-red">LES CACHES !!!</h3>
+        </section>
+        <section>
+          <h2>Contenu</h2>
+          <p>Tout Drupal !</p>
+          <p>Attention au Flash, aux images, ...</p>
+        </section>
+        <section>
+          <h2>Liens</h2>
+          <h3 class="fragment roll-in">Internes</h3>
+          <ul>
+            <li class="fragment roll-in">Menu</li>
+            <li class="fragment roll-in">Views "contenu similaire" (Taxonomy)</li>
+            <li class="fragment roll-in">Views "derniers contenus"</li>
+          </ul>
+          <h3 class="fragment roll-in">Externes</h3>
+          <ul>
+            <li class="fragment roll-in">Pour les flux RSS : Views</li>
+            <li class="fragment roll-in">Pour les balises META : Metatag</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Les pièges classiques</h2>
+          <p>Contenu dupliqué</p>
+          <p>Migration depuis un site existant (Module <a href="https://drupal.org/project/redirect">Redirect</a>)</p>
+        </section>
+
+        <section>
+          <h2>La sémantique</h2>
+          <p>Fil d'ariane, votes, évènements, ...</p>
+        </section>
+
+        <section>
+          <h2>Pour aller plus loin</h2>
+          <p>Images, Vidéos, ...</p>
+          <p>L'international (hreflang)</p>
+          <p>Le "local"</p>
+          <p>Le mobile</p>
+        </section>
+
+				<section>
+          <h2>Outils</h2>
+          <ul>
+            <li>Google Webmaster Tools</li>
+            <li><a href="https://www.botify.com/">Botify</a>, <a href="http://www.screamingfrog.co.uk/seo-spider/">SEO Spider</a>, <a href="http://beamusup.com/">BeamUsUp</a></li>
+            <li>Sites web divers et variés</li>
+            <li>Depuis le 15/06/2015 : <a href="https://en.onpage.org/product/free/">OnPage.org</a> a une version gratuite (limitée)</li>
+          </ul>
+				</section>
+        <section>
+          <h2>Liens</h2>
+          <ul>
+            <li><a href="http://www.blindfiveyearold.com/crawl-optimization">"Budget" de Crawl</a></li>
+            <li><a href="http://bit.ly/SEOcheatsheet">"Cheatsheet" SEO</a></li>
+            <li><a href="http://www.référencements.net/referencement-refonte-site-internet-245-2013">Checklist de refonte de site</a></li>
+            <li><a href="http://seogadget.com/javascript-framework-seo/">Indexer une application JS</a></li>
+            <li><a href="http://www.webgnomes.org/blog/grantland-seo-audit-example/">Audit SEO très détaillé</a></li>
+            <li><a href="https://www.botify.com/blog/top-seo-pitfalls-by-type-of-website/">Erreurs courantes par type de site</a></li>
+            <li><a href="http://www.canyouseome.com/comment-calculer-le-page-rank/">Calcul du PageRank d'une page</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Comptes twitter</h2>
+          <ul>
+            <li><a href="https://twitter.com/randfish">@randfish</a> (EN)</li>
+            <li><a href="https://twitter.com/aleyda">@aleyda</a> (EN)</li>
+            <li><a href="https://twitter.com/laurentbourelly">@laurentbourelly</a> (FR)</li>
+            <li><a href="https://twitter.com/largow">@largow</a> (FR)</li>
+          </ul>
+        </section>
+        <section>
+          <img src="keywords.png" />
+        </section>
+        <section>
+          <img src="visites.png" />
+        </section>
+
+				<section>
+					<h2>Questions ?</h2>
+          <h3>Simon Georges (<a href="https://twitter.com/simongeorges">@simongeorges</a>)</h3>
+          <h3>Laurent Peyrat (<a href="https://twitter.com/laurentpeyrat">@laurentpeyrat</a>)</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
